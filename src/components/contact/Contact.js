@@ -29,8 +29,8 @@ class Contacts extends Component {
             <Container>
                 <Row>
                     <Col></Col>
-                    <Col sm={6}>
-                        <h4 style={{ color: "white" }}>Contact List</h4>
+                    <Col sm={10}>
+                        <h4 className="page-header">Contact List</h4>
                         <ContactSearcher filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
                         <ContactList phones={phones} filterText={this.state.filterText} />
                     </Col>
@@ -50,6 +50,6 @@ const mapStateToProps = (state) => {
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-        { collection: 'phones', orderBy: ['lName', 'asc'] }
+        { collection: 'phones', orderBy: ['fName', 'asc'] }
     ])
 )(Contacts)

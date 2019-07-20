@@ -29,8 +29,8 @@ class Dashboard extends Component {
             <Container>
                 <Row>
                     <Col></Col>
-                    <Col xs={9}>
-                    <h4 className="page-header">Job List</h4>
+                    <Col xs={10}>
+                        <h4 className="page-header">Job List</h4>
                         <Searcher filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
                         <JobList jobs={jobs} filterText={this.state.filterText} />
                     </Col>

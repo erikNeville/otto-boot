@@ -4,8 +4,8 @@ import Card from 'react-bootstrap/Card'
 const ContactSummary = ({ phone }) => {
     return (
         <Card className="contact-summary">
-            <span>{phone.fName} {phone.lName}</span>
-            <p><a href={"tel:" + phone.phone}>{phone.phone}</a></p>
+            <Card.Header>{phone.fName} {phone.lName}</Card.Header>
+            <Card.Link href={"tel:" + phone.phone} className="card-phone">{phone.phone}</Card.Link>
         </Card>
     )
 }

@@ -18,7 +18,7 @@ code {
 }
 
 .contact-summary {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0 10px 0;
 }
 
 .page-header {
@@ -28,4 +28,8 @@ code {
 
 .card-address {
   padding-left: 10px;
+}
+
+.card-phone {
+  padding-left: 19px;
 }
