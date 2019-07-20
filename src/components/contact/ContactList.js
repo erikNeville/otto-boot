@@ -1,14 +1,21 @@
 import React from 'react'
 import ContactSummary from './ContactSummary'
 
-const ContactList = ({ phones }) => {
+const ContactList = (props) => {
+
+    const { phones, filterText } = props;
+
     return (
         <div>
-            { phones && phones.map(phone => {
-                return (
-                    <ContactSummary phone={phone} key={phone.id} />
-                )
-            })}
+            { phones && phones
+                .filter(phone => {
+                    return phone.fName.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
+                })
+                .map(phone => {
+                    return (
+                        <ContactSummary phone={phone} key={phone.id} />
+                    )
+                })}
         </div>
     )
 }

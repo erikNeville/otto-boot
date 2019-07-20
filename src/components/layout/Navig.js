@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav'
 const Navig = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+            <Navbar.Brand href="/">Otto Rosenau & Associates, Inc.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">

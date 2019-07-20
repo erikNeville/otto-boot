@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import JobList from '../jobs/JobList' 
 import Searcher from './Searcher'
 import { connect } from 'react-redux'
@@ -25,8 +27,15 @@ class Dashboard extends Component {
 
         return (
             <Container>
-                <Searcher filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
-                <JobList jobs={jobs} filterText={this.state.filterText} />
+                <Row>
+                    <Col></Col>
+                    <Col xs={9}>
+                    <h4 className="page-header">Job List</h4>
+                        <Searcher filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
+                        <JobList jobs={jobs} filterText={this.state.filterText} />
+                    </Col>
+                    <Col></Col>
+                </Row>
             </Container>
         )
     }

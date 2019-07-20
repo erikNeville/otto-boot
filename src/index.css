@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1a274a;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.job-summary {
+  margin: 10px 0 10px 0;
+}
+
+.contact-summary {
+  margin: 10px 0px 10px 0px;
+}
+
+.page-header {
+  color: white;
+  margin: 15px 0px 15px 0px;
+}
+
+.card-address {
+  padding-left: 10px;
 }
