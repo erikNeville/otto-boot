@@ -4,12 +4,11 @@ import Collapse from 'react-bootstrap/Collapse'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
-import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 const JobSummary = ({ job }) => {
 
     const [open, setOpen] = useState(false);
+    console.log(job)
 
     return (
         <Card className="job-summary">
@@ -38,7 +37,7 @@ const JobSummary = ({ job }) => {
                                                 Permit No.<p>{job.permit}</p>
                                             </Col>
                                             <Col sm>
-                                                Contact:<p>{job.phone}</p>
+                                                Contact:<p><Card.Link href={"tel" + job.phone} className="card-phone">{job.phone}</Card.Link></p>
                                             </Col>
                                         </Row>
                                     </Card.Text>
@@ -52,7 +51,6 @@ const JobSummary = ({ job }) => {
                     >
                     More Info
                     </Button>
-                    
                 </>
             </footer>
         </Card>

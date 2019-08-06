@@ -13,6 +13,19 @@ code {
     monospace;
 }
 
+.job-list {
+  margin-top: 110px;
+  position: relative;
+}
+
+.job-list-header {
+  z-index: 1;
+  position: fixed;
+  background-color: #1a274a;
+  margin-bottom: 20px;
+  padding-right: 79px;
+}
+
 .job-summary {
   margin: 10px 0 10px 0;
 }
@@ -24,6 +37,10 @@ code {
 .page-header {
   color: white;
   margin: 15px 0px 15px 0px;
+}
+.job-searcher {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .card-address {

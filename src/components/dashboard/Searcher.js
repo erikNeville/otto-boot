@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Container from 'react-bootstrap/Container'
 
 class Searcher extends Component {
     
@@ -11,7 +10,7 @@ class Searcher extends Component {
     render() {
         //console.log(this.props)
         return (
-            <div>
+            <div className="job-searcher">
                 <i className="material-icons"><input type="text" ref={ (value) => {this.myValue = value} } placeholder="Enter Job Name" onChange={this.filterUpdate.bind(this)}></input></i>
             </div>
         )

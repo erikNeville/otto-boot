@@ -29,7 +29,7 @@ class Contacts extends Component {
             <Container>
                 <Row>
                     <Col></Col>
-                    <Col sm={10}>
+                    <Col xs={7}>
                         <h4 className="page-header">Contact List</h4>
                         <ContactSearcher filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} />
                         <ContactList phones={phones} filterText={this.state.filterText} />

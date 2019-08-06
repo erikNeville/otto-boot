@@ -4,7 +4,6 @@ import JobSummary from './JobSummary'
 const JobList = (props) => {
 
     const { jobs, filterText } = props;
-
     return (
         <div className="job-list">
             { jobs && jobs
@@ -12,6 +11,7 @@ const JobList = (props) => {
                     return job.project.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
             })
             .map(job => {
+                //console.log(job)
                 return (
                     <JobSummary job={job} key={job.id} />
                 )
