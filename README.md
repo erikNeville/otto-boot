@@ -1,3 +1,11 @@
+This application is the same as my Job Searcher app, with the exception of using react-bootstrap as a design element.
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
